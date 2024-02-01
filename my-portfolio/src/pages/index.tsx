@@ -3,8 +3,10 @@ import { Inter } from "next/font/google";
 import Layout from "../components/Layout";
 import HeroSec from "@/components/HeroSec";
 import InfoSec from "@/components/InfoSec";
-import SkillSec from "@/components/SkillSec";
-
+import ResumeSec from "@/components/ResumeSec";
+import AboutSec from "@/components/AboutSec";
+import ProjectSec from "@/components/ProjectsSec";
+import ContactSec from "@/components/ContactSec";
 
 
 export default function Home() {
@@ -12,7 +14,10 @@ export default function Home() {
     <Layout>
       <HeroSec />
       <InfoSec />
-      <SkillSec />
+      <AboutSec  />
+      <ResumeSec />
+      <ProjectSec />
+      <ContactSec />
     </Layout>
   );
 }

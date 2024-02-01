@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const InfoSec = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mr-16 ml-16 mt-24">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mr-16 ml-16 mt-24 mb-40">
       <div className="col-span-full">
         <h1 className="text-5xl text-center mt-4">Area of Interest</h1>
       </div>
@@ -46,6 +46,12 @@ const InfoSec = () => {
           </Card>
         </div>
       </div>
+
+      <div className="text-2xl text-center col-span-full">
+        <h1>Most Used Technologies:</h1>
+
+      </div>
+      
       
 
     </div>

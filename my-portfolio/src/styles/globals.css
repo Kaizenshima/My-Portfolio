@@ -1,13 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
-
-
-*{
-  font-family: 'Bebas Neue', sans-serif;
-}
 
 @layer base {
   :root {
@@ -81,3 +74,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+

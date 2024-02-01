@@ -1,9 +1,9 @@
-import React, { ReactNode }from "react";
+import React, { ReactNode } from "react";
 import NavBar from "./NavBar";
-import { Roboto_Condensed as Inter } from "next/font/google";
+import { Oswald as Inter } from "next/font/google";
 import { ThemeProvider } from "./theme-provider";
 
-const inter = Inter({ subsets: ["latin"], weight: ["700"]});
+const inter = Inter({ subsets: ["latin"], weight: ["400"], });
 
 interface LayoutProps {
   children: ReactNode;
@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`${inter.className} `}>
+    <div className={`${inter.className} px-15`}>
       <ThemeProvider
         attribute="class"
         defaultTheme="system"

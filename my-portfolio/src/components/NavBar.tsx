@@ -1,9 +1,11 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { NavItem } from '@/pages/constants/NavItem';
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
+import { Link as ScrollLink } from 'react-scroll';
 
 import {
   DropdownMenu,
@@ -17,26 +19,31 @@ import {
 const NavBar = () => {
 
     const { setTheme } = useTheme()
+    const router = useRouter();
+    const isActive = (path: string) => router.pathname === path;
 
 
   return (
-    <div className= 'justify-between flex sticky top-0 py-5 shadow-lg backdrop-blur-md'>
+    <div className= 'justify-between flex sticky top-0 py-3 shadow-lg bg-secondary'>
       <Link href={"/"} className='text-4xl font-semibold ml-4'>
         ken.y
       </Link>
       <div className='flex gap-5 text-xl'>
-        <Link href={NavItem.Home}>
+        <ScrollLink to="home-section" smooth={true} duration={500} href={NavItem.Home}>
           <Button variant={'ghost'}>Home</Button>
-        </Link>
-        <Link href={NavItem.About}>
+        </ScrollLink>
+        <ScrollLink to="about-section" smooth={true} duration={500}>
           <Button variant={'ghost'}>About</Button>
-        </Link>
-        <Link href={NavItem.Projects}>
+        </ScrollLink>
+        <ScrollLink to="resume-section" smooth={true} duration={500}>
+          <Button variant={'ghost'}> Resume</Button>
+        </ScrollLink>
+        <ScrollLink to="project-section" smooth={true} duration={500}>
           <Button variant={'ghost'}> Projects</Button>
-        </Link>
-        <Link href={NavItem.Contact}>
+        </ScrollLink>
+        <ScrollLink to="contact-section" smooth={true} duration={500}>
           <Button variant={'ghost'}>Contact</Button>
-        </Link>
+        </ScrollLink>
 
         <div className="mr-5">
             <DropdownMenu>
