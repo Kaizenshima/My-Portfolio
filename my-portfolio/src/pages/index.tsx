@@ -7,6 +7,7 @@ import ResumeSec from "@/components/ResumeSec";
 import AboutSec from "@/components/AboutSec";
 import ProjectSec from "@/components/ProjectsSec";
 import ContactSec from "@/components/ContactSec";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <ResumeSec />
       <ProjectSec />
       <ContactSec />
+      <ScrollToTopButton />
     </Layout>
   );
 }

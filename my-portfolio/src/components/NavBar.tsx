@@ -24,7 +24,7 @@ const NavBar = () => {
 
 
   return (
-    <div className= 'justify-between flex sticky top-0 py-3 shadow-lg bg-secondary'>
+    <div className= 'justify-between flex py-3 shadow-lg bg-secondary'>
       <Link href={"/"} className='text-4xl font-semibold ml-4'>
         ken.y
       </Link>

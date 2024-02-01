@@ -52,6 +52,17 @@ const InfoSec = () => {
 
       </div>
       
+      {/* What can I do section*/}
+      <div className="text-3xl text-center mt-8  col-span-full">
+          <h1 className="border-b-2 border-blue-500 inline-block" >WHAT CAN I DO?</h1>
+            <div className="mt-8 mb-8">
+                <h1 className="text-xl">Database Management - Web Development - Data Analysis - Data Visualization</h1>
+            </div>
+            <h1 className="border-b-2 border-blue-500 inline-block" >HOBBIES AND INTERESTS</h1>
+            <div className="mt-8 mb-8">
+                <h1 className="text-xl">Watching Movies - Playing Video Games - Reading Books</h1>
+            </div>
+        </div>
       
 
     </div>

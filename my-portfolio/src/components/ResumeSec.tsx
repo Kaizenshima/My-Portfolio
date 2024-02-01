@@ -11,38 +11,42 @@ import "react-vertical-timeline-component/style.min.css";
 const ResumeSec = () => {
   return (
     <div >
-      <div id="resume-section" className="grid grid-cols-3 justify-center mt-4">
+      <div>
+        <h1 className="text-6xl text-left mt-16 ml-8 mb-10">RESUME</h1>
+      </div>
+      <div id="resume-section" className="grid grid-cols-2 mt-4">
         {/* Softskill section*/}
         <div className="text-3xl text-left ml-8 col-span-1 underline-red">
           <h1 className="border-b-2 border-blue-500 inline-block"  >SOFTWARE SKILLS</h1>
           <div className="text-xl text-left mt-10 col-span-1 p-1">
             <h1 className="text-2xl">Programming Languages</h1>
-            <div className="flex gap-1 mt-8">
-              <FaPython className="size-8" />
-              <span className="ml-4">Python</span>
-              <Progress className="ml-8" value={89} style={{ width: "50%" }} />
-            </div>
+            <h1 className="text-xl mt-6">Front-End</h1>
             <div className="flex gap-1 mt-4">
               <TbBrandNextjs className="size-8" />
               <span className="ml-4">Next.js</span>
-              <Progress className="ml-8" value={69} style={{ width: "50%" }} />
+              <Progress className="ml-8 mt-2" value={69} style={{ width: "50%" }} />
             </div>
+            <h1 className="text-xl mt-6">Back-End</h1>
             <div className="flex gap-1 mt-4">
               <FaNodeJs className="size-8" />
               <span className="ml-4">Node.js</span>
-              <Progress className="ml-8" value={79} style={{ width: "50%" }} />
+              <Progress className="ml-8 mt-2" value={79} style={{ width: "50%" }} />
             </div>
-
+            <div className="flex gap-1 mt-8">
+              <FaPython className="size-8" />
+              <span className="ml-4">Python</span>
+              <Progress className="ml-8 mt-2" value={89} style={{ width: "50%" }} />
+            </div>
             <h1 className="text-2xl mt-8 mb-8">Databases</h1>
             <div className="flex gap-1 mt-4">
               <BiLogoPostgresql className="size-8" />
               <span className="ml-4">PostgrSQL</span>
-              <Progress className="ml-3" value={89} style={{ width: "50%" }} />
+              <Progress className="ml-3 mt-2" value={89} style={{ width: "50%" }} />
             </div>
             <div className="flex gap-1 mt-4">
               <SiMongodb className="size-8" />
               <span className="ml-4">MongoDB</span>
-              <Progress className="ml-3" value={49} style={{ width: "50%" }} />
+              <Progress className="ml-3 mt-2" value={49} style={{ width: "50%" }} />
             </div>
 
             <h1 className="text-2xl mt-8 mb-8">Personal Skills</h1>
@@ -75,17 +79,7 @@ const ResumeSec = () => {
 
         
 
-        {/* What can I do section*/}
-        <div className="text-3xl text-left ml-8 col-span-1">
-          <h1 className="border-b-2 border-blue-500 inline-block" >WHAT CAN I DO?</h1>
-            <div className="mt-8 mb-8">
-                <h1 className="text-xl">Database Management - Web Development - Data Analysis - Data Visualization</h1>
-            </div>
-            <h1 className="border-b-2 border-blue-500 inline-block" >HOBBIES AND INTERESTS</h1>
-            <div className="mt-8 mb-8">
-                <h1 className="text-xl">Watching Movies - Playing Video Games - Reading Books</h1>
-            </div>
-        </div>
+        
 
 
 
