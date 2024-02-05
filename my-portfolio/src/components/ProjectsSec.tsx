@@ -31,9 +31,7 @@ const ProjectsSec = () => {
             />
 
           ))}
-        </div>
-
-        
+        </div>    
     </div>
   )
 }

@@ -5,10 +5,11 @@ import { FaNodeJs } from "react-icons/fa";
 import { Progress } from "@/components/ui/progress";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import VerticalTimeline from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Certificate } from "@/pages/constants/Certificates";
 import CertificateCards from "./CertificateCards";
+
 
 const ResumeSec = () => {
   return (
@@ -113,56 +114,7 @@ const ResumeSec = () => {
       </div>
 
       {/* Experience section*/}
-      <div className="text-3xl text-left">
-        <h1 className="text-center mt-8 mb-8 ">EXPERIENCE</h1>
-        <div>
-          <VerticalTimeline>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{
-                background: "#000000",
-                color: "#fff",
-              }}
-              contentArrowStyle={{
-                borderRight: "7px solid  #000000",
-              }}
-              date="2023 -2024"
-              dateClassName="text-gray-600"
-              iconStyle={{ background: "gray", color: "#fff" }}
-              // icon={<WorkIcon />}
-            >
-              <h3 className="vertical-timeline-element-title">
-                Clerk/Data Entry
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                Eduardo L. Joson Memorial Hospital, N.E, Philippines
-              </h4>
-              <p>Encode patient's information and medical records.</p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              date="2023 - 2024"
-              dateClassName="text-gray-600"
-              contentStyle={{
-                background: "black",
-                color: "#fff",
-              }}
-              contentArrowStyle={{
-                borderRight: "7px solid  #000000",
-              }}
-              iconStyle={{ background: "gray", color: "#fff" }}
-              // icon={<WorkIcon />}
-            >
-              <h3 className="vertical-timeline-element-title">
-                Full Stack Developer Intern
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                Cabanatuan City, N.E, Philippines
-              </h4>
-              <p>Develop a website for a small business.</p>
-            </VerticalTimelineElement>
-          </VerticalTimeline>
-        </div>
+      
 
         <div >
           <h1 className="text-center mt-8 mb-8 text-6xl">Certificates</h1>
@@ -181,7 +133,6 @@ const ResumeSec = () => {
             </div> 
         </div>
       </div>
-    </div>
   );
 };
 

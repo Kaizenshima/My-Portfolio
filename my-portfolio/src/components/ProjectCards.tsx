@@ -18,8 +18,8 @@ interface ProjectCardsProps {
   project_name: string;
   project_pic: string;
   project_description: string;
-  project_tags: String[];
-  project_link: String;
+  project_tags: string[];
+  project_link: string;
 }
 
 const ProjectCards: React.FC<ProjectCardsProps> = ({

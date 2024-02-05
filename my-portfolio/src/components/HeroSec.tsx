@@ -17,13 +17,13 @@ const HeroSec = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 justify-between items-center p-12 mb-20 mt-12 ml-8 "
       >
         <div className="col-span-3 text-center text-5xl lg:text-left lg:ml-16">
-          <b>Hello,</b> I'm <br />
+          <b>Hello,</b> I&apos;m <br />
           <span className="text-gray-600 text-7xl font-bold">
             Ken Yamagishi
           </span>
           <div className="mt-2 text-3xl">
-            I'm a{" "}
-            <span className="text-brown-500">
+            I&apos;m a{" "}
+            <span className='text-brown-500'>
               <TypeAnimation
                 cursor={true}
                 sequence={sequence}
