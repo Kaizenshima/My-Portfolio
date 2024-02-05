@@ -12,6 +12,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
+    <main>
     <Layout>
       <HeroSec />
       <InfoSec />
@@ -21,5 +22,6 @@ export default function Home() {
       <ContactSec />
       <ScrollToTopButton />
     </Layout>
+    </main>
   );
 }
