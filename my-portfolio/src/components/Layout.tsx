@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={`${inter.className} px-15`}>
+    <div className={`${inter.className} `}>
       
       <ThemeProvider
         attribute="class"

@@ -6,6 +6,8 @@ import { NavItem } from '@/pages/constants/NavItem';
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
 import { Link as ScrollLink } from 'react-scroll';
+import Contact from './Contact';
+
 
 import {
   DropdownMenu,
@@ -24,7 +26,7 @@ const NavBar = () => {
 
 
   return (
-    <div className= 'justify-between flex py-3 shadow-lg bg-secondary'>
+    <nav className= 'flex justify-between p-4 w-full bg-secondary '>
       <Link href={"/"} className='text-4xl font-semibold ml-4'>
         ken.y
       </Link>
@@ -35,15 +37,13 @@ const NavBar = () => {
         <ScrollLink to="about-section" smooth={true} duration={500}>
           <Button variant={'ghost'}>About</Button>
         </ScrollLink>
-        <ScrollLink to="resume-section" smooth={true} duration={500}>
-          <Button variant={'ghost'}> Resume</Button>
-        </ScrollLink>
         <ScrollLink to="project-section" smooth={true} duration={500}>
           <Button variant={'ghost'}> Projects</Button>
         </ScrollLink>
         <ScrollLink to="contact-section" smooth={true} duration={500}>
           <Button variant={'ghost'}>Contact</Button>
         </ScrollLink>
+
 
         <div className="mr-5">
             <DropdownMenu>
@@ -72,7 +72,7 @@ const NavBar = () => {
     
 
 
-    </div>
+    </nav>
   );
 };
 

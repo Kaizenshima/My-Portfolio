@@ -19,5 +19,14 @@ export const Project = [
         project_tags : ["Python", "Matploblib", "Pandas"],
         project_link : "#"
 
+    },
+
+    {
+        id : 3,
+        project_pic : "Net1.png",
+        project_name : "PeerTutorHub",
+        project_description : "Developed a website for Peer Tutoring Scheduling in NEUST",
+        project_tags : ["PHP", "MySQL", "Jquery", "HTML", "CSS", "Bootstrap", "JavaScript"],
+        project_link : "#"
     }
 ]

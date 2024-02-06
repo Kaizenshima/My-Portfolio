@@ -18,8 +18,8 @@ import { Project } from "@/pages/constants/Projects"
 const ProjectsSec = () => {
   return (
     <div id='project-section'>
-            <h1 className=" text-4xl text-center">PROJECTS</h1>
-        <div className="p-8 grid grid-cols-3 justify-items-center">
+            <h1 className="md:text-4xl text-center mt-20 mb-14">PROJECTS</h1>
+        <div className="flex-wrap flex justify-center gap-8 mb-12">
           {Project.map((project, index) => (
             <ProjectCards
                 key = {index}

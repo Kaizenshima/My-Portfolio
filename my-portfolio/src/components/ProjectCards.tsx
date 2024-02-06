@@ -28,32 +28,30 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({
   project_description,
   project_tags,
   project_link
-  
 }) => {
   return (
-    <Card className="w-[380px]">
+    <Card className="w-[380px] hover:shadow-lg transition duration-300">
       <CardContent>
-        <Image
-          className="p-5 transition-transform transform-gpu duration-300 group-hover:scale-105 w-full md:w-96 lg:w-80"
-          src={`/images/${project_pic}`}
-          alt="Your Alt Text"
-          width={420}
-          height={420}
-        />
+        <div className="p-5 transition-transform transform-gpu duration-300 group-hover:scale-105">
+          <Image
+            src={`/images/${project_pic}`}
+            alt="Your Alt Text"
+            width={420}
+            height={420}
+          />
+        </div>
 
         <p>{project_name}</p>
         <p>{project_description}</p>
-        
+
         {project_tags.map((tags, index) => (
-            <Badge key={index} variant={"secondary"}>
-              {tags}
-            </Badge>
-          ))}
-        
-        
+          <Badge key={index} variant={"secondary"}>
+            {tags}
+          </Badge>
+        ))}
       </CardContent>
       <CardFooter>
-      <Link href={project_link} target="_blank">
+        <Link href={project_link} target="_blank">
           <Button variant={"secondary"}>View Repo</Button>
         </Link>
       </CardFooter>

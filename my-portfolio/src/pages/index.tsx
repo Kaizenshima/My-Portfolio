@@ -6,8 +6,9 @@ import InfoSec from "@/components/InfoSec";
 import ResumeSec from "@/components/ResumeSec";
 import AboutSec from "@/components/AboutSec";
 import ProjectSec from "@/components/ProjectsSec";
-import ContactSec from "@/components/ContactSec";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
       <AboutSec  />
       <ResumeSec />
       <ProjectSec />
-      <ContactSec />
       <ScrollToTopButton />
+      <Contact />
+      <Footer />
     </Layout>
     </main>
   );

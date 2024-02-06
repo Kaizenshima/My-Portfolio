@@ -15,11 +15,11 @@ import { Tag } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 interface CertificateCardsProps {
-    certificate_pic : "GAC.png";
-    certificate_name : "Google Analytics";
-    certificate_description : "Google Analytics for Beginners";
-    certificate_tags : ["Google", "Analytics"];
-    certificate_link : "https://drive.google.com/file/d/1uh01hPQQp2JJ3PjxvjXSB4prnZy7yCco/view?usp=drive_link";
+    certificate_pic : string;
+    certificate_name : string;
+    certificate_description : string;
+    certificate_tags : string[];
+    certificate_link : string;
 
 }
 
@@ -33,7 +33,7 @@ const CertificateCards: React.FC<CertificateCardsProps> = ({
   
 }) => {
   return (
-    <Card className="w-[380px]">
+    <Card className="w-[340px]">
       <CardContent>
         <Image
           className="p-5 transition-transform transform-gpu duration-300 group-hover:scale-105 w-full md:w-96 lg:w-80"
