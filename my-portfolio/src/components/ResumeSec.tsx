@@ -1,8 +1,8 @@
 import React from "react";
-import { Certificate } from "@/pages/constants/Certificates";
+import {Certificate} from "./constants/Certificates";
 import CertificateCards from "./CertificateCards";
 import SkillSec from "./SkillSec";
-import { Skill } from "@/pages/constants/Skills";
+import {Skill} from "./constants/Skills";
 
 const ResumeSec = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { Button } from './ui/button';
 import Link from 'next/link';
-import { NavItem } from '@/pages/constants/NavItem';
+import {NavItem} from './constants/NavItem';
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
 import { Link as ScrollLink } from 'react-scroll';

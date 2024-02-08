@@ -6,9 +6,9 @@ import Image from "next/image";
 import Me from "../pages/assets/me.png";
 import { FaGithub, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import { sequence } from "@/pages/constants/sequence";
+import {sequence}  from "./constants/sequence";
 import styles from "../styles/style.module.css";
-import { NavItem } from "@/pages/constants/NavItem";
+import  {NavItem} from "./constants/NavItem";
 
 // Make sure to set this properly based on your application structure
 Modal.setAppElement("#__next");

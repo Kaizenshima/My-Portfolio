@@ -17,6 +17,5 @@ export const Certificate = [
         certificate_tags : ["Microsoft", "Office"],
         certificate_link : "https://drive.google.com/file/d/1tCkwe9h12k2-27HlLCJf3VmGN6MSlHrd/view?usp=sharing"
     }
-
-
 ]
+

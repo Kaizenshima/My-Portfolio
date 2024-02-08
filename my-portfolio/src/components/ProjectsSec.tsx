@@ -8,12 +8,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { NavItem } from '@/pages/constants/NavItem';
+import {NavItem} from './constants/NavItem';
 import GAC from "@/pages/assets/GAC.png";
 import Certiport from "@/pages/assets/Certiport.png";
 import { Button } from './ui/button';
 import ProjectCards from './ProjectCards';
-import { Project } from "@/pages/constants/Projects"
+import {Project} from "./constants/Projects"
 
 const ProjectsSec = () => {
   return (

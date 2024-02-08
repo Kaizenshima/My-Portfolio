@@ -1,4 +1,4 @@
-import { NavItem } from "@/pages/constants/NavItem";
+import  {NavItem} from "./constants/NavItem";
 import React from "react";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 

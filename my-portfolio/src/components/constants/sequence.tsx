@@ -6,3 +6,4 @@ export const sequence = [
     "Data Analyst",
     3000,
   ]
+
