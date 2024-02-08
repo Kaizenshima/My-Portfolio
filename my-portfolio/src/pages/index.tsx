@@ -10,20 +10,20 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 
-
 export default function Home() {
   return (
-    <main>
-    <Layout>
-      <HeroSec />
-      <InfoSec />
-      <AboutSec  />
-      <ResumeSec />
-      <ProjectSec />
-      <ScrollToTopButton />
-      <Contact />
+    <main className="min-h-screen">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <Layout>
+        <HeroSec />
+        <InfoSec />
+        <AboutSec />
+        <ResumeSec />
+        <ProjectSec />
+        <ScrollToTopButton />
+        <Contact />
+      </Layout>
       <Footer />
-    </Layout>
     </main>
   );
 }

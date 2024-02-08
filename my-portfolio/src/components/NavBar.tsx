@@ -26,11 +26,11 @@ const NavBar = () => {
 
 
   return (
-    <nav className= 'flex justify-between p-4 w-full bg-secondary '>
+    <nav className= 'flex justify-between p-4 w-full bg-secondary fixed top-0 right-0 left-0 z-50'>
       <Link href={"/"} className='text-4xl font-semibold ml-4'>
         ken.y
       </Link>
-      <div className='flex gap-5 text-xl'>
+      <div className='flex text-xl '>
         <ScrollLink to="home-section" smooth={true} duration={500} href={NavItem.Home}>
           <Button variant={'ghost'}>Home</Button>
         </ScrollLink>
